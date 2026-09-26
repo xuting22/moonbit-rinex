@@ -1,0 +1,22 @@
+name: bounded-observation-checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash -s -- "$(cat .moonbit-version)"
+      - run: echo "$HOME/.moon/bin" >> "$GITHUB_PATH"
+      - run: moon version --all
+      - run: moon update
+      - run: moon fmt && moon info && git diff --exit-code
+      - run: moon check --target all
+      - run: moon test --target js
+      - run: moon test --target wasm-gc
+      - run: moon build --target js --release
+      - run: node tools/test-public-contract.mjs
+      - run: moon run examples/consumer --target js
+      - run: moon run examples/consumer --target wasm-gc

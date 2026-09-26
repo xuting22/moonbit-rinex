@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.rnx -text
+/tools/reference/brux_reference.py -text

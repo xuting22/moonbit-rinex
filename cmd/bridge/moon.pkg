@@ -1,0 +1,13 @@
+import {
+  "xuting22/rinex" @r,
+  "moonbitlang/core/debug",
+  "moonbitlang/core/json",
+}
+
+supported_targets = "js"
+
+pkgtype(kind: "executable")
+
+options(
+  link: { "js": { "exports": [ "create", "feed", "finish" ], "format": "esm" } },
+)
