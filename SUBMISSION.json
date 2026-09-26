@@ -1,7 +1,7 @@
 {
   "project": "rinex",
   "originalSubmission": "ntp",
-  "title": "RINEX观测文件接收检查 · 换题申报草稿",
+  "title": "RINEX观测文件接收检查",
   "module": "xuting22/rinex",
   "version": "0.1.0",
   "repository": null,
@@ -18,5 +18,9 @@
   "currentEvidenceScope": "Old NTP submission retired; pure MoonBit bounded GPS OBS checker, public 2880 epochs / 2815818 slots with independent reference; known header discrepancy preserved",
   "topicChangeApproved": false,
   "publicRepositoryCreated": false,
-  "localModuleNameNeedsReview": false
+  "localModuleNameNeedsReview": false,
+  "useCase": "在观测文件入库前检查GPS时间窗、头/载荷一致性和观测字段统计",
+  "diff": "不猜测未具名NTP竞品；RINEX读取已有成熟工具，增量为MoonBit有界流式接收检查",
+  "remainingRisk": "仅声明的GPS OBS子集，非CRINEX/NAV/定位器；字段非空不等于物理可用；换题待办理",
+  "reviewDecision": "停用未消解重复的NTP，替换RINEX"
 }
