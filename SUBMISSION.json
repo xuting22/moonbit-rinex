@@ -1,0 +1,22 @@
+{
+  "project": "rinex",
+  "originalSubmission": "ntp",
+  "title": "RINEX观测文件接收检查 · 换题申报草稿",
+  "module": "xuting22/rinex",
+  "version": "0.1.0",
+  "repository": null,
+  "license": "MIT",
+  "status": "旧选题停用；本地替代完成核验，换题与公开待团队办理",
+  "acceptance": "not established",
+  "localChangesPublished": false,
+  "actualUsersClaimed": false,
+  "remoteCIRunByThisTask": false,
+  "currentValidation": "evidence/public-20260927/LOCAL-CHECKS.json",
+  "currentEvidence": "evidence/public-20260927/LOCAL-CHECKS.json",
+  "proposalLines": 14,
+  "metadataReviewedOn": "2026-09-27",
+  "currentEvidenceScope": "Old NTP submission retired; pure MoonBit bounded GPS OBS checker, public 2880 epochs / 2815818 slots with independent reference; known header discrepancy preserved",
+  "topicChangeApproved": false,
+  "publicRepositoryCreated": false,
+  "localModuleNameNeedsReview": false
+}
