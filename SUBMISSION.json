@@ -21,7 +21,7 @@
   "localModuleNameNeedsReview": false,
   "useCase": "在观测文件入库前检查GPS时间窗、头/载荷一致性和观测字段统计",
   "diff": "不猜测未具名NTP竞品；RINEX读取已有成熟工具，增量为MoonBit有界流式接收检查",
-  "remainingRisk": "仅声明的GPS OBS子集，非CRINEX/NAV/定位器；字段非空不等于物理可用；换题待办理",
+  "remainingRisk": "仅声明版本的OBS子集与GPS时系（可含多星座），非CRINEX/NAV/定位器；字段非空不等于物理可用；换题待办理",
   "reviewDecision": "停用未消解重复的NTP，替换RINEX",
   "previousEvidence": "evidence/public-20260927/LOCAL-CHECKS.json",
   "previousGeoRinexEvidence": "evidence/georinex-20260927/LOCAL-CHECKS.json"

@@ -61,10 +61,10 @@
   ],
   "sourceFingerprints": {
     "GEORUST-REFERENCE.md": "e14dbcdbdcb9dcb1efeb5db603532ee7e51459deb7818f527b8d33e9c4e80712",
-    "PROPOSAL.md": "c3ee0ba2afaadd361ac0cf9df389b3340ea6f4ecc495a37256013e3a6817c0a1",
+    "PROPOSAL.md": "5bafa2c66ec2e8636ba01103a760828caeaf0b22dec087854fd5a3b7741cafd2",
     "PUBLIC-DATA.md": "816d5ccf22e9dfd46f6f09122468abb25b86e7cd9f4f0abe0629abe0e2eb0d06",
     "README.md": "22c5db047baac96e7d0464cf9da4bab8c3b05e64785b0c4c74d45c436470aaf9",
-    "SUBMISSION.json": "d17036d233a0641e9d35d6dc615fc79f017977bfaebb19fc0fffedb8b858e4c8",
+    "SUBMISSION.json": "51d670cd75e35b6025182dce1999e3420962f7cbf1d08dfa7c7661f7cedd19fd",
     "TESTING.md": "86135cf862cb9107e99e2f5d9676b15c205240667631f419e95c8d65a101b724",
     "capacity_wbtest.mbt": "91a2150ee814c36ba26bd33243670cd937b9a13ee0dd61ae6ff653f5fccb8399",
     "checker.mbt": "bf8d373cf71d7c619cfa213fceb4b2369a64cfea66abb309612dccb223f81b0c",
@@ -93,5 +93,6 @@
     "remote CI"
   ],
   "baselineCoreEvidence": "evidence/public-20260927/LOCAL-CHECKS.json",
-  "additionalGeoRinexEvidence": "evidence/georinex-20260927/LOCAL-CHECKS.json"
+  "additionalGeoRinexEvidence": "evidence/georinex-20260927/LOCAL-CHECKS.json",
+  "documentationClarification": "GPS names the supported time system, not a restriction to GPS satellites; OBS may contain the declared supported constellations. No code or result change."
 }
