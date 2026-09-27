@@ -2,7 +2,7 @@
 
 **本项目尚未公开；只有本地源码。公开地址由对接团队创建后填写，旧 moonbit-ntp 地址不能替代新项目。**
 
-模块 `xuting22/rinex`，0.1.0，MIT。拟替换旧 NTP 申报，换题尚未获赛事确认。
+模块 `xuting22/rinex`，0.1.1，MIT。拟替换旧 NTP 申报，换题尚未获赛事确认。
 
 面向接收 GNSS 观测文件的 MoonBit 应用：在数据进入后续解算/归档前，分行检查观测声明、载荷、时间窗和缺失记录，并输出可定位的失败。核心读取流、时间计算和检查策略均为 MoonBit；Node 只提供有界文件 I/O。支持范围见 [SCOPE](docs/SCOPE.md)。
 
@@ -42,3 +42,5 @@ BRUX00BEL 2026-09-23数据由Royal Observatory of Belgium提供，CC-BY-4.0；�
 编译器固定 `0.10.12+1634b282e`，Node24；本地检查见 [TESTING](TESTING.md)。公开/换题动作、报名表和外部复审由团队完成。
 
 2026-09-27追加：用固定GeoRinex1.16.2核对另一份公开CEDA3.03样本的时刻、信号计数和L1/L2 LLI，并独立复核814条间隔诊断。BRUX4.01未获该参考支持，原始版本头保持不变。详见 [GeoRinex参考](GEORINEX-REFERENCE.md)。
+
+当前0.1.1又以固定Rust rinex0.22.0实际解析原BRUX4.01，并与重新运行的MoonBit结果核对90组星座/信号码及22组相位LLI统计。两种参考支持的版本与空槽边界分别说明，见 [原BRUX4.01参考](GEORUST-REFERENCE.md)。

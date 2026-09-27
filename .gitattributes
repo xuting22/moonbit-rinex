@@ -1,3 +1,6 @@
 * text=auto eol=lf
 *.rnx -text
 /tools/reference/brux_reference.py -text
+
+# Preserve exact manifest bytes recorded for the independent parser run.
+/tools/reference/georust/Cargo.toml -text

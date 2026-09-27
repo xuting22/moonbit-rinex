@@ -3,7 +3,7 @@
   "originalSubmission": "ntp",
   "title": "RINEX观测文件接收检查",
   "module": "xuting22/rinex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": null,
   "license": "MIT",
   "status": "旧选题停用；本地替代完成核验，换题与公开待团队办理",
@@ -11,11 +11,11 @@
   "localChangesPublished": false,
   "actualUsersClaimed": false,
   "remoteCIRunByThisTask": false,
-  "currentValidation": "evidence/georinex-20260927/LOCAL-CHECKS.json",
-  "currentEvidence": "evidence/georinex-20260927/LOCAL-CHECKS.json",
-  "proposalLines": 16,
+  "currentValidation": "evidence/georust-20260927/LOCAL-CHECKS.json",
+  "currentEvidence": "evidence/georust-20260927/LOCAL-CHECKS.json",
+  "proposalLines": 18,
   "metadataReviewedOn": "2026-09-27",
-  "currentEvidenceScope": "Unchanged MoonBit core; prior BRUX counter evidence plus GeoRinex1.16.2 CEDA3.03 epoch/signal/interval and selected LLI comparison",
+  "currentEvidenceScope": "Unchanged core; actual pinned Rust rinex0.22.0 parse of original BRUX4.01 compared directly with a new MoonBit full-day run, 90 system/signal and 22 phase/LLI groups; blank slots still fixed-field reference only",
   "topicChangeApproved": false,
   "publicRepositoryCreated": false,
   "localModuleNameNeedsReview": false,
@@ -23,5 +23,6 @@
   "diff": "不猜测未具名NTP竞品；RINEX读取已有成熟工具，增量为MoonBit有界流式接收检查",
   "remainingRisk": "仅声明的GPS OBS子集，非CRINEX/NAV/定位器；字段非空不等于物理可用；换题待办理",
   "reviewDecision": "停用未消解重复的NTP，替换RINEX",
-  "previousEvidence": "evidence/public-20260927/LOCAL-CHECKS.json"
+  "previousEvidence": "evidence/public-20260927/LOCAL-CHECKS.json",
+  "previousGeoRinexEvidence": "evidence/georinex-20260927/LOCAL-CHECKS.json"
 }
