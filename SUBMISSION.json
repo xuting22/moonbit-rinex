@@ -11,16 +11,17 @@
   "localChangesPublished": false,
   "actualUsersClaimed": false,
   "remoteCIRunByThisTask": false,
-  "currentValidation": "evidence/public-20260927/LOCAL-CHECKS.json",
-  "currentEvidence": "evidence/public-20260927/LOCAL-CHECKS.json",
-  "proposalLines": 14,
+  "currentValidation": "evidence/georinex-20260927/LOCAL-CHECKS.json",
+  "currentEvidence": "evidence/georinex-20260927/LOCAL-CHECKS.json",
+  "proposalLines": 16,
   "metadataReviewedOn": "2026-09-27",
-  "currentEvidenceScope": "Old NTP submission retired; pure MoonBit bounded GPS OBS checker, public 2880 epochs / 2815818 slots with independent reference; known header discrepancy preserved",
+  "currentEvidenceScope": "Unchanged MoonBit core; prior BRUX counter evidence plus GeoRinex1.16.2 CEDA3.03 epoch/signal/interval and selected LLI comparison",
   "topicChangeApproved": false,
   "publicRepositoryCreated": false,
   "localModuleNameNeedsReview": false,
   "useCase": "在观测文件入库前检查GPS时间窗、头/载荷一致性和观测字段统计",
   "diff": "不猜测未具名NTP竞品；RINEX读取已有成熟工具，增量为MoonBit有界流式接收检查",
   "remainingRisk": "仅声明的GPS OBS子集，非CRINEX/NAV/定位器；字段非空不等于物理可用；换题待办理",
-  "reviewDecision": "停用未消解重复的NTP，替换RINEX"
+  "reviewDecision": "停用未消解重复的NTP，替换RINEX",
+  "previousEvidence": "evidence/public-20260927/LOCAL-CHECKS.json"
 }
