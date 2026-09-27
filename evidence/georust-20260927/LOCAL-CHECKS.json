@@ -50,6 +50,13 @@
       "exit": 1,
       "expected": true,
       "artifact": "comparator-rejection.json"
+    },
+    {
+      "command": "re-run full-day Node checker with canonical Git LF host script",
+      "exit": 2,
+      "expected": true,
+      "outputByteIdentical": true,
+      "reason": "source/package fingerprint check exposed Windows checkout line-ending difference"
     }
   ],
   "sourceFingerprints": {
@@ -69,7 +76,7 @@
     "moon.mod": "04020d0fafe2f6a7137c8991f41a46832b1f34448ae1c48aa7a1bccdcc6ff602",
     "pkg.generated.mbti": "1edb3827fe09a8889968e3f318f990d0a5e046cd1c2bf417d5de72f817b640fc",
     "time.mbt": "2a0769e7bbfe27d9a42cdcdff4275ca4ec22f2cd5a2b16a9bf6ea0222b3d6d77",
-    "tools/check-file.mjs": "88c1b34a2fc6dfa3c0a517bf2fba27fb9049c48a02353625afd9f77db6cf0b74",
+    "tools/check-file.mjs": "60471691a5bf5e0ce041f0b3dc034dd6f8a42d5282ccd9ccf7ad59abd75f2573",
     "tools/reference/compare-georust-brux.py": "a1083fe12c5c0957bf4aa2cb8d75d0eeb0add8af2a1680bb69cf6e8756de60b3",
     "tools/reference/georust/Cargo.lock": "2308d27e5f81e90ace6b50b9242a270b588fd9795945bb00d168b1bc0d38bcb4",
     "tools/reference/georust/Cargo.toml": "c3234848b2ed4ea46a8e25e83d32f3843b002c9b06415f1c09165c3a9d8cbd2b",
