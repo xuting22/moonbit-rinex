@@ -44,3 +44,19 @@ BRUX00BEL 2026-09-23数据由Royal Observatory of Belgium提供，CC-BY-4.0；�
 2026-09-27追加：用固定GeoRinex1.16.2核对另一份公开CEDA3.03样本的时刻、信号计数和L1/L2 LLI，并独立复核814条间隔诊断。BRUX4.01未获该参考支持，原始版本头保持不变。详见 [GeoRinex参考](GEORINEX-REFERENCE.md)。
 
 当前0.1.1又以固定Rust rinex0.22.0实际解析原BRUX4.01，并与重新运行的MoonBit结果核对90组星座/信号码及22组相位LLI统计。两种参考支持的版本与空槽边界分别说明，见 [原BRUX4.01参考](GEORUST-REFERENCE.md)。
+
+## 本地验收与公开交付（2026-09-28）
+
+核心实现使用 MoonBit；[固定编译器](.moonbit-version)为 `moonc 0.10.14+7d59c7ec9`。先按本文安装宿主依赖、运行 `moon update`，再从仓库根目录执行以下与 [CI](.github/workflows/ci.yml) 对齐的检查；可运行任务和适用边界见本文前面的示例与说明。
+
+```sh
+moon check --target all
+moon test --target js
+moon test --target wasm-gc
+moon build --target js --release
+moon package
+```
+
+本地核验：JS/Wasm-GC 各 31 项测试及 15 项 CLI/公开契约检查通过；0079 提示仍为非致命警告。 `moon package` 已完成离线打包预检，它不等于已发布到 Mooncakes。
+
+公开交付（2026-09-28 核对）：尚无本项目正式公开仓库 URL 或 Mooncakes 版本；当前模块名为 `xuting22/rinex`；换题资格、仓库、公开 CI 和首次发布均待团队办理，不能沿用旧题仓库链接。相关远端 CI 与赛事结果仍需以实际记录核对。项目许可见 [LICENSE](LICENSE)；如使用第三方材料，其来源和许可见仓内相应说明。
