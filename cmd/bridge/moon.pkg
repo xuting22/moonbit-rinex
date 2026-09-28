@@ -1,7 +1,6 @@
 import {
   "xuting22/rinex" @r,
   "moonbitlang/core/debug",
-  "moonbitlang/core/json",
 }
 
 supported_targets = "js"

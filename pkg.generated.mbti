@@ -11,6 +11,7 @@ import {
 pub suberror CheckError {
   Rejected(String, Int, String)
 } derive(@debug.Debug)
+pub fn CheckError::to_repr(Self) -> @debug.Repr
 
 // Types and methods
 pub struct Checker {
@@ -65,6 +66,8 @@ pub(all) struct Finding {
   error : Bool
   detail : String
 } derive(ToJson, @debug.Debug)
+pub fn Finding::to_json(Self) -> Json
+pub fn Finding::to_repr(Self) -> @debug.Repr
 
 pub struct Header {
   version : String
@@ -79,6 +82,8 @@ pub struct Header {
   observation_types : Map[String, Array[String]]
   uninterpreted_labels : Array[String]
 } derive(ToJson, @debug.Debug)
+pub fn Header::to_json(Self) -> Json
+pub fn Header::to_repr(Self) -> @debug.Repr
 
 pub struct Report {
   complete : Bool
@@ -98,6 +103,8 @@ pub struct Report {
   finding_counts : Map[String, Int]
   omitted_findings : Int
 } derive(ToJson, @debug.Debug)
+pub fn Report::to_json(Self) -> Json
+pub fn Report::to_repr(Self) -> @debug.Repr
 
 type SignalCounter
 
@@ -111,6 +118,8 @@ pub struct SignalCounts {
   lli_bit1 : Int
   lli_bit2 : Int
 } derive(ToJson, @debug.Debug)
+pub fn SignalCounts::to_json(Self) -> Json
+pub fn SignalCounts::to_repr(Self) -> @debug.Repr
 
 pub struct SystemCounts {
   system : String
@@ -118,6 +127,8 @@ pub struct SystemCounts {
   satellites : Array[String]
   signals : Array[SignalCounts]
 } derive(ToJson, @debug.Debug)
+pub fn SystemCounts::to_json(Self) -> Json
+pub fn SystemCounts::to_repr(Self) -> @debug.Repr
 
 pub struct Window {
   start : Int64
@@ -126,6 +137,8 @@ pub struct Window {
 } derive(ToJson, @debug.Debug)
 pub fn Window::epn_daily(Int, Int, Int) -> Self raise CheckError
 pub fn Window::epn_hourly(Int, Int, Int, Int) -> Self raise CheckError
+pub fn Window::to_json(Self) -> Json
+pub fn Window::to_repr(Self) -> @debug.Repr
 
 // Type aliases
 

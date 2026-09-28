@@ -13,10 +13,10 @@ jobs:
       - run: moon version --all
       - run: moon update
       - run: moon fmt && moon info && git diff --exit-code
-      - run: moon check --target all
-      - run: moon test --target js
-      - run: moon test --target wasm-gc
-      - run: moon build --target js --release
+      - run: moon check --target all --deny-warn
+      - run: moon test --target js --deny-warn
+      - run: moon test --target wasm-gc --deny-warn
+      - run: moon build --target js --release --deny-warn
       - run: node tools/test-public-contract.mjs
       - run: moon run examples/consumer --target js
       - run: moon run examples/consumer --target wasm-gc

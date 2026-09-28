@@ -50,13 +50,13 @@ BRUX00BEL 2026-09-23数据由Royal Observatory of Belgium提供，CC-BY-4.0；�
 核心实现使用 MoonBit；[固定编译器](.moonbit-version)为 `moonc 0.10.14+7d59c7ec9`。先按本文安装宿主依赖、运行 `moon update`，再从仓库根目录执行以下与 [CI](.github/workflows/ci.yml) 对齐的检查；可运行任务和适用边界见本文前面的示例与说明。
 
 ```sh
-moon check --target all
-moon test --target js
-moon test --target wasm-gc
-moon build --target js --release
+moon check --target all --deny-warn
+moon test --target js --deny-warn
+moon test --target wasm-gc --deny-warn
+moon build --target js --release --deny-warn
 moon package
 ```
 
-本地核验：JS/Wasm-GC 各 31 项测试及 15 项 CLI/公开契约检查通过；0079 提示仍为非致命警告。 `moon package` 已完成离线打包预检，它不等于已发布到 Mooncakes。
+本地核验：JS/Wasm-GC 各 31 项测试及 15 项 CLI/公开契约检查通过；严格检查无警告。`moon package` 已完成离线打包预检，它不等于已发布到 Mooncakes。
 
 公开交付（2026-09-28 核对）：尚无本项目正式公开仓库 URL 或 Mooncakes 版本；当前模块名为 `xuting22/rinex`；换题资格、仓库、公开 CI 和首次发布均待团队办理，不能沿用旧题仓库链接。相关远端 CI 与赛事结果仍需以实际记录核对。项目许可见 [LICENSE](LICENSE)；如使用第三方材料，其来源和许可见仓内相应说明。
