@@ -1,6 +1,6 @@
 # MoonBit RINEX 观测文件接收检查
 
-**本项目仓库：[moonbit-rinex](https://github.com/xuting22/moonbit-rinex)。**
+**本项目仓库：[moonbit-rinex](https://github.com/xuting22/moonbit-rinex)。** 本地交付版 0.1.2 仅补全已存在公开仓库的包元数据地址，算法未改；尚未推送或发布，公开版仍为 0.1.1。
 
 模块 `xuting22/rinex`，0.1.1，MIT。拟替换旧 NTP 申报，换题尚未获赛事确认。
 
