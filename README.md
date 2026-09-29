@@ -1,6 +1,6 @@
 # MoonBit RINEX 观测文件接收检查
 
-**本项目尚未公开；只有本地源码。公开地址由申报人创建后填写，旧 moonbit-ntp 地址不能替代新项目。**
+**本项目仓库：[moonbit-rinex](https://github.com/xuting22/moonbit-rinex)。**
 
 模块 `xuting22/rinex`，0.1.1，MIT。拟替换旧 NTP 申报，换题尚未获赛事确认。
 
@@ -61,4 +61,4 @@ moon package
 
 本地核验：JS/Wasm-GC 各 31 项测试及 15 项 CLI/公开契约检查通过；严格检查无警告。`moon package` 已完成离线打包预检，它不等于已发布到 Mooncakes。
 
-公开交付（2026-09-28 核对）：尚无本项目正式公开仓库 URL 或 Mooncakes 版本；当前模块名为 `xuting22/rinex`；换题资格、仓库、公开 CI 和首次发布均待申报人办理，不能沿用旧题仓库链接。相关远端 CI 与赛事结果仍需以实际记录核对。项目许可见 [LICENSE](LICENSE)；如使用第三方材料，其来源和许可见仓内相应说明。
+**公开状态（2026-09-29 核对）**：GitHub [公开仓库](https://github.com/xuting22/moonbit-rinex)、[Mooncakes 0.1.1](https://mooncakes.io/docs/xuting22/rinex@0.1.1) 已可访问；[CI 成功记录](https://github.com/xuting22/moonbit-rinex/actions/runs/36561936725) 对应 `ece707541b24`。本次材料更新尚未推送；该远端 CI 对应所列公开提交。报名表一致性及赛事审核结果尚未核实。

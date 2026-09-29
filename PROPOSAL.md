@@ -1,7 +1,7 @@
 # RINEX 观测文件的接收检查与时间窗核对
 
-本项目公开仓库：尚未创建，不能填写旧NTP地址代替。
-本地模块 `xuting22/rinex@0.1.1`，MIT；旧 NTP 因重复风险停止扩充，拟另报本项目。是否允许换题和正式项目地址仍待核实。
+本项目公开仓库：https://github.com/xuting22/moonbit-rinex。
+本地模块 `xuting22/rinex@0.1.1`，MIT；旧 NTP 因重复风险停止扩充，拟另报本项目。公开地址已核实，是否允许换题仍待赛事确认。
 
 ## 使用任务与 MoonBit 核心
 
@@ -17,10 +17,10 @@ GNSS 观测文件进入 MoonBit 解算或归档应用前，需要确认头部声
 
 GeoRust、gnss-js 和 EPN QC 已有成熟能力；本项目不主张 RINEX、质量控制算法或生态空白的原创性。增量是 MoonBit 应用可直接调用、带容量与失败边界的文件接收核心；重叠和选用依据见 [DUPLICATION](DUPLICATION.md) 与 [SCOPE](docs/SCOPE.md)。
 
-边界：仅声明版本的OBS、GPS时系与flags0、1（可含多星座）；无压缩、导航、电文解算、完整EPN/RINEX认证或动态事件处理；不支持的内容拒绝，完整检查有问题返回独立状态。现阶段为有公开文件证据的本地可复查库，不是生产成熟度或过审承诺。
+边界：仅声明版本的OBS、GPS时系与flags0、1（可含多星座）；无压缩、导航、电文解算、完整EPN/RINEX认证或动态事件处理；不支持的内容拒绝，完整检查有问题返回独立状态。现阶段为已公开、具有真实观测文件验证的可复用库，不是生产成熟度或过审承诺。
 
 2026-09-27追加：用固定GeoRinex1.16.2核对另一份公开CEDA3.03样本的时刻、信号计数和L1/L2 LLI，并独立复核814条间隔诊断。BRUX4.01未获该参考支持，原始版本头保持不变。详见 [GeoRinex参考](GEORINEX-REFERENCE.md)。
 
 0.1.1补充固定Rust rinex0.22.0对原BRUX4.01的实际独立解析，90组星座/信号码和22组相位LLI统计与重新运行的MoonBit结果一致；空槽仍由Python定宽参考覆盖，未进行定位验证。
 
-**验收复现与交付状态（2026-09-28 本地）**：以 moonc 0.10.14+7d59c7ec9 通过 `--deny-warn` 检查、JS/Wasm-GC 测试和构建、最小样例和离线 `moon package`；同一代码在 Ubuntu-D 26.04 WSL2 全新解包后通过格式、接口生成、严格双后端检查及 Node 24.21.0 最小宿主入口；公开仓库已上线、远端 CI（ubuntu-latest）通过、Mooncakes 已发布 0.1.1；换题资格与表单更新按赛事流程办理。命令与能力边界见 [README](README.md)，自动检查见 [CI](.github/workflows/ci.yml)；本地通过不代表赛事审核通过。
+**公开状态（2026-09-29 核对）**：GitHub [公开仓库](https://github.com/xuting22/moonbit-rinex)、[Mooncakes 0.1.1](https://mooncakes.io/docs/xuting22/rinex@0.1.1) 已可访问；[CI 成功记录](https://github.com/xuting22/moonbit-rinex/actions/runs/36561936725) 对应 `ece707541b24`。本次材料更新尚未推送；该远端 CI 对应所列公开提交。报名表一致性及赛事审核结果尚未核实。
