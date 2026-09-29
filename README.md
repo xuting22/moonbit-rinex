@@ -2,7 +2,7 @@
 
 **本项目仓库：[moonbit-rinex](https://github.com/xuting22/moonbit-rinex)。** 本地交付版 0.1.2 仅补全已存在公开仓库的包元数据地址，算法未改；尚未推送或发布，公开版仍为 0.1.1。
 
-模块 `xuting22/rinex`，0.1.1，MIT。拟替换旧 NTP 申报，换题尚未获赛事确认。
+模块 `xuting22/rinex`，本地交付版 0.1.2、公开版 0.1.1，MIT。拟替换旧 NTP 申报，换题尚未获赛事确认。
 
 面向接收 GNSS 观测文件的 MoonBit 应用：在数据进入后续解算/归档前，分行检查观测声明、载荷、时间窗和缺失记录，并输出可定位的失败。核心读取流、时间计算和检查策略均为 MoonBit；Node 只提供有界文件 I/O。支持范围见 [SCOPE](docs/SCOPE.md)。
 
